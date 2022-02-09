@@ -9,8 +9,26 @@ import SwiftUI
 
 struct TastySnacksTabView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView {
+            TastySnackListView()
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Home")
+                }
+
+            OrderView()
+                .tabItem {
+                    Image(systemName: "bag")
+                    Text("Order")
+                }
+
+            AccountView()
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Account")
+                }
+        }
+        .accentColor(Color("brandSecondary"))
     }
 }
 
