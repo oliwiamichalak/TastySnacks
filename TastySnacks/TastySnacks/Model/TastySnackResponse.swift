@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct TastySnackResponse {
+struct TastySnackResponse: Decodable {
     let request: [TastySnack]
 }

@@ -17,6 +17,12 @@
 		F46B522D27B41C8700E9E18F /* TastySnack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B522C27B41C8700E9E18F /* TastySnack.swift */; };
 		F46B522F27B41E4600E9E18F /* TastySnackResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B522E27B41E4600E9E18F /* TastySnackResponse.swift */; };
 		F46B523427B4211B00E9E18F /* SnackListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B523327B4211B00E9E18F /* SnackListCell.swift */; };
+		F46B523727B45CC000E9E18F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B523627B45CC000E9E18F /* NetworkManager.swift */; };
+		F46B523A27B45F9A00E9E18F /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B523927B45F9A00E9E18F /* ErrorType.swift */; };
+		F46B523D27B4668300E9E18F /* TastySnacksListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B523C27B4668300E9E18F /* TastySnacksListViewModel.swift */; };
+		F46B524127B5A60700E9E18F /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B524027B5A60700E9E18F /* AlertItem.swift */; };
+		F46B524327B5A63500E9E18F /* AlertContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B524227B5A63500E9E18F /* AlertContext.swift */; };
+		F46B524527B5A6BE00E9E18F /* ErrorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B524427B5A6BE00E9E18F /* ErrorDescription.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +37,12 @@
 		F46B522C27B41C8700E9E18F /* TastySnack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastySnack.swift; sourceTree = "<group>"; };
 		F46B522E27B41E4600E9E18F /* TastySnackResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastySnackResponse.swift; sourceTree = "<group>"; };
 		F46B523327B4211B00E9E18F /* SnackListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackListCell.swift; sourceTree = "<group>"; };
+		F46B523627B45CC000E9E18F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F46B523927B45F9A00E9E18F /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
+		F46B523C27B4668300E9E18F /* TastySnacksListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastySnacksListViewModel.swift; sourceTree = "<group>"; };
+		F46B524027B5A60700E9E18F /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		F46B524227B5A63500E9E18F /* AlertContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertContext.swift; sourceTree = "<group>"; };
+		F46B524427B5A6BE00E9E18F /* ErrorDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDescription.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,9 @@
 		F46B521527B40F8A00E9E18F /* TastySnacks */ = {
 			isa = PBXGroup;
 			children = (
+				F46B523F27B5A5EF00E9E18F /* Alerts */,
+				F46B523B27B4666800E9E18F /* ViewModels */,
+				F46B523827B45F8800E9E18F /* Utilities */,
 				F46B523227B420CC00E9E18F /* UIComponents */,
 				F46B522B27B41B3000E9E18F /* Model */,
 				F46B522427B410FC00E9E18F /* Views */,
@@ -95,6 +110,7 @@
 		F46B522B27B41B3000E9E18F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F46B523527B45CA500E9E18F /* Manager */,
 				F46B522C27B41C8700E9E18F /* TastySnack.swift */,
 				F46B522E27B41E4600E9E18F /* TastySnackResponse.swift */,
 			);
@@ -107,6 +123,40 @@
 				F46B523327B4211B00E9E18F /* SnackListCell.swift */,
 			);
 			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		F46B523527B45CA500E9E18F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F46B523627B45CC000E9E18F /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F46B523827B45F8800E9E18F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F46B523927B45F9A00E9E18F /* ErrorType.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F46B523B27B4666800E9E18F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F46B523C27B4668300E9E18F /* TastySnacksListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F46B523F27B5A5EF00E9E18F /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				F46B524027B5A60700E9E18F /* AlertItem.swift */,
+				F46B524227B5A63500E9E18F /* AlertContext.swift */,
+				F46B524427B5A6BE00E9E18F /* ErrorDescription.swift */,
+			);
+			path = Alerts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,11 +229,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F46B524327B5A63500E9E18F /* AlertContext.swift in Sources */,
+				F46B523727B45CC000E9E18F /* NetworkManager.swift in Sources */,
+				F46B524127B5A60700E9E18F /* AlertItem.swift in Sources */,
 				F46B522827B4113100E9E18F /* AccountView.swift in Sources */,
 				F46B521927B40F8A00E9E18F /* TastySnacksTabView.swift in Sources */,
 				F46B523427B4211B00E9E18F /* SnackListCell.swift in Sources */,
 				F46B522D27B41C8700E9E18F /* TastySnack.swift in Sources */,
+				F46B523D27B4668300E9E18F /* TastySnacksListViewModel.swift in Sources */,
 				F46B522F27B41E4600E9E18F /* TastySnackResponse.swift in Sources */,
+				F46B524527B5A6BE00E9E18F /* ErrorDescription.swift in Sources */,
+				F46B523A27B45F9A00E9E18F /* ErrorType.swift in Sources */,
 				F46B521727B40F8A00E9E18F /* TastySnacksApp.swift in Sources */,
 				F46B522627B4111E00E9E18F /* TastySnackListView.swift in Sources */,
 				F46B522A27B4113A00E9E18F /* OrderView.swift in Sources */,
