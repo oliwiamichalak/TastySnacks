@@ -25,6 +25,7 @@
 		F46B524527B5A6BE00E9E18F /* ErrorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B524427B5A6BE00E9E18F /* ErrorDescription.swift */; };
 		F46B524727B5ABAD00E9E18F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B524627B5ABAD00E9E18F /* LoadingView.swift */; };
 		F46B524A27B5ACC900E9E18F /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B524927B5ACC900E9E18F /* Color+Extension.swift */; };
+		F46B524C27B5B3B200E9E18F /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B524B27B5B3B200E9E18F /* RemoteImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		F46B524427B5A6BE00E9E18F /* ErrorDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDescription.swift; sourceTree = "<group>"; };
 		F46B524627B5ABAD00E9E18F /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		F46B524927B5ACC900E9E18F /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		F46B524B27B5B3B200E9E18F /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				F46B523327B4211B00E9E18F /* SnackListCell.swift */,
+				F46B524B27B5B3B200E9E18F /* RemoteImage.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F46B524327B5A63500E9E18F /* AlertContext.swift in Sources */,
+				F46B524C27B5B3B200E9E18F /* RemoteImage.swift in Sources */,
 				F46B523727B45CC000E9E18F /* NetworkManager.swift in Sources */,
 				F46B524127B5A60700E9E18F /* AlertItem.swift in Sources */,
 				F46B522827B4113100E9E18F /* AccountView.swift in Sources */,
