@@ -11,21 +11,29 @@ final class TastySnacksListViewModel: ObservableObject {
 
     @Published var snacks: [TastySnack] = []
     @Published var alertItem: AlertItem?
+    @Published var isLoading = false
 
     func getSnacks() {
+        isLoading = true
+
         NetworkManager.shared.getTastySnacks { [self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let snacks):
                     self.snacks = snacks
+                    self.isLoading = false
+
                 case .failure(let error):
                     switch error {
                     case .invalidData:
                         alertItem = AlertContext.invalidData
+
                     case .invalidURL:
                         alertItem = AlertContext.invalidUrl
+
                     case .invalidResponse:
                         alertItem = AlertContext.invalidResponse
+
                     case .unableToComplete:
                         alertItem = AlertContext.unableToComplete
                     }
