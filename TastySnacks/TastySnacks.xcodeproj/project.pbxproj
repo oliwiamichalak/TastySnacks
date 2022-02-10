@@ -23,6 +23,9 @@
 		F46B524127B5A60700E9E18F /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B524027B5A60700E9E18F /* AlertItem.swift */; };
 		F46B524327B5A63500E9E18F /* AlertContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B524227B5A63500E9E18F /* AlertContext.swift */; };
 		F46B524527B5A6BE00E9E18F /* ErrorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B524427B5A6BE00E9E18F /* ErrorDescription.swift */; };
+		F46B524727B5ABAD00E9E18F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B524627B5ABAD00E9E18F /* LoadingView.swift */; };
+		F46B524A27B5ACC900E9E18F /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B524927B5ACC900E9E18F /* Color+Extension.swift */; };
+		F46B524C27B5B3B200E9E18F /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B524B27B5B3B200E9E18F /* RemoteImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		F46B524027B5A60700E9E18F /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 		F46B524227B5A63500E9E18F /* AlertContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertContext.swift; sourceTree = "<group>"; };
 		F46B524427B5A6BE00E9E18F /* ErrorDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDescription.swift; sourceTree = "<group>"; };
+		F46B524627B5ABAD00E9E18F /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		F46B524927B5ACC900E9E18F /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		F46B524B27B5B3B200E9E18F /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 				F46B522527B4111E00E9E18F /* TastySnackListView.swift */,
 				F46B522727B4113100E9E18F /* AccountView.swift */,
 				F46B522927B4113A00E9E18F /* OrderView.swift */,
+				F46B524627B5ABAD00E9E18F /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -121,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				F46B523327B4211B00E9E18F /* SnackListCell.swift */,
+				F46B524B27B5B3B200E9E18F /* RemoteImage.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -136,6 +144,7 @@
 		F46B523827B45F8800E9E18F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				F46B524827B5ACB100E9E18F /* Extensions */,
 				F46B523927B45F9A00E9E18F /* ErrorType.swift */,
 			);
 			path = Utilities;
@@ -157,6 +166,14 @@
 				F46B524427B5A6BE00E9E18F /* ErrorDescription.swift */,
 			);
 			path = Alerts;
+			sourceTree = "<group>";
+		};
+		F46B524827B5ACB100E9E18F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F46B524927B5ACC900E9E18F /* Color+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,13 +247,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F46B524327B5A63500E9E18F /* AlertContext.swift in Sources */,
+				F46B524C27B5B3B200E9E18F /* RemoteImage.swift in Sources */,
 				F46B523727B45CC000E9E18F /* NetworkManager.swift in Sources */,
 				F46B524127B5A60700E9E18F /* AlertItem.swift in Sources */,
 				F46B522827B4113100E9E18F /* AccountView.swift in Sources */,
 				F46B521927B40F8A00E9E18F /* TastySnacksTabView.swift in Sources */,
 				F46B523427B4211B00E9E18F /* SnackListCell.swift in Sources */,
 				F46B522D27B41C8700E9E18F /* TastySnack.swift in Sources */,
+				F46B524A27B5ACC900E9E18F /* Color+Extension.swift in Sources */,
 				F46B523D27B4668300E9E18F /* TastySnacksListViewModel.swift in Sources */,
+				F46B524727B5ABAD00E9E18F /* LoadingView.swift in Sources */,
 				F46B522F27B41E4600E9E18F /* TastySnackResponse.swift in Sources */,
 				F46B524527B5A6BE00E9E18F /* ErrorDescription.swift in Sources */,
 				F46B523A27B45F9A00E9E18F /* ErrorType.swift in Sources */,
