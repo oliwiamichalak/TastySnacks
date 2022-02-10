@@ -10,15 +10,25 @@ import SwiftUI
 final class TastySnacksListViewModel: ObservableObject {
 
     @Published var snacks: [TastySnack] = []
+    @Published var alertItem: AlertItem?
 
     func getSnacks() {
-        NetworkManager.shared.getTastySnacks { result in
+        NetworkManager.shared.getTastySnacks { [self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let snacks):
                     self.snacks = snacks
                 case .failure(let error):
-                    print(error.localizedDescription)
+                    switch error {
+                    case .invalidData:
+                        alertItem = AlertContext.invalidData
+                    case .invalidURL:
+                        alertItem = AlertContext.invalidUrl
+                    case .invalidResponse:
+                        alertItem = AlertContext.invalidResponse
+                    case .unableToComplete:
+                        alertItem = AlertContext.unableToComplete
+                    }
                 }
             }
         }
