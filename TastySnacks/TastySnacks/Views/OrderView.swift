@@ -17,9 +17,7 @@ struct OrderView: View {
                     ForEach(MockData.snapleSnacks) { order in
                         SnackListCell(tastySnack: order)
                     }
-                    .onDelete { indexSet in
-                        orderItems.remove(atOffsets: indexSet)
-                    }
+                    .onDelete(perform: deleteItems)
                 }
                 .listStyle(GroupedListStyle())
 
@@ -32,6 +30,10 @@ struct OrderView: View {
             }
             .navigationTitle("Order")
         }
+    }
+
+    func deleteItems(at offsets: IndexSet) {
+        orderItems.remove(atOffsets: offsets)
     }
 }
 
