@@ -8,40 +8,40 @@
 import SwiftUI
 
 struct AccountView: View {
-    @State private var firstName = ""
-    @State private var lastName = ""
-    @State private var email = ""
-    @State private var birthdate = Date()
-    @State private var refill = false
-    @State private var dessert = false
+
+    @StateObject var viewModel = AccountViewModel()
 
     var body: some View {
         NavigationView {
             Form {
                 Section(header: Text("Personal information")) {
-                    TextField("First name", text: $firstName)
-                    TextField("Last name", text: $lastName)
-                    TextField("Email", text: $email)
+                    TextField("First name", text: $viewModel.firstName)
+                    TextField("Last name", text: $viewModel.lastName)
+                    TextField("Email", text: $viewModel.email)
                         .keyboardType(.emailAddress)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
 
-                    DatePicker("Birthday", selection: $birthdate, displayedComponents: .date)
+                    DatePicker("Birthday", selection: $viewModel.birthdate, displayedComponents: .date)
 
                     Button {
-                        print("save")
+                        viewModel.saveChanges()
                     } label: {
                         Text("Save changes")
                     }
                 }
 
                 Section(header: Text("Request")) {
-                    Toggle("Refill", isOn: $refill)
-                    Toggle("Dessert menu", isOn: $dessert)
+                    Toggle("Refill", isOn: $viewModel.refill)
+                    Toggle("Main menu", isOn: $viewModel.mainMenu)
+                    Toggle("Dessert menu", isOn: $viewModel.dessert)
                 }
                 .toggleStyle(SwitchToggleStyle(tint: .brandPrimary))
             }
             .navigationTitle("Account")
+        }
+        .alert(item: $viewModel.alertItem) { alertItem in
+            Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.buttonType)
         }
     }
 }

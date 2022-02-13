@@ -31,4 +31,16 @@ struct AlertContext {
         message: Text(ErrorDescription.unableToComplete.rawValue),
         buttonType: .default(Text("OK"))
     )
+
+    static let invalidForm = AlertItem(
+        title: Text("Invalid Form"),
+        message: Text(ErrorDescription.invalidForm.rawValue),
+        buttonType: .default(Text("OK"))
+    )
+
+    static let invalidEmail = AlertItem(
+        title: Text("Invalid Email"),
+        message: Text(ErrorDescription.invalidEmail.rawValue),
+        buttonType: .default(Text("OK"))
+    )
 }
