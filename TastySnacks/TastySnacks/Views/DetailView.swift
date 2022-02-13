@@ -38,6 +38,7 @@ struct DetailView: View {
 
             Button {
                 order.add(tastySnack)
+                isShowingDetail = false
             } label: {
                 TastyButton(title: "$\(tastySnack.price, specifier: "%.2f") - Add to Order")
             }

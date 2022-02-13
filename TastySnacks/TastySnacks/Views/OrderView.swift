@@ -18,14 +18,14 @@ struct OrderView: View {
                         ForEach(order.items) { order in
                             SnackListCell(tastySnack: order)
                         }
-                        .onDelete(perform: deleteItems)
+                        .onDelete(perform: order.deleteItems)
                     }
                     .listStyle(GroupedListStyle())
 
                     Button {
 
                     } label: {
-                        TastyButton(title: "Order")
+                        TastyButton(title: "$\(order.totalPrice, specifier: "%.2f") - Place Order")
                     }
                     .padding(.bottom, 25)
                 }
@@ -36,9 +36,5 @@ struct OrderView: View {
             }
             .navigationTitle("Order")
         }
-    }
-
-    func deleteItems(at offsets: IndexSet) {
-        order.items.remove(atOffsets: offsets)
     }
 }
