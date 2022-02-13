@@ -11,6 +11,7 @@ struct DetailView: View {
     let tastySnack: TastySnack
 
     @Binding var isShowingDetail: Bool
+    @EnvironmentObject var order: Order
 
     var body: some View {
         VStack {
@@ -36,7 +37,7 @@ struct DetailView: View {
             Spacer()
 
             Button {
-                print("test")
+                order.add(tastySnack)
             } label: {
                 TastyButton(title: "$\(tastySnack.price, specifier: "%.2f") - Add to Order")
             }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F4349FD627B99A1A00417813 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4349FD527B99A1A00417813 /* EmptyState.swift */; };
+		F4349FD827B9A02C00417813 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4349FD727B9A02C00417813 /* Order.swift */; };
 		F46B521727B40F8A00E9E18F /* TastySnacksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B521627B40F8A00E9E18F /* TastySnacksApp.swift */; };
 		F46B521927B40F8A00E9E18F /* TastySnacksTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B521827B40F8A00E9E18F /* TastySnacksTabView.swift */; };
 		F46B521B27B40F8D00E9E18F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F46B521A27B40F8D00E9E18F /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		F4349FD527B99A1A00417813 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		F4349FD727B9A02C00417813 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		F46B521327B40F8A00E9E18F /* TastySnacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TastySnacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46B521627B40F8A00E9E18F /* TastySnacksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastySnacksApp.swift; sourceTree = "<group>"; };
 		F46B521827B40F8A00E9E18F /* TastySnacksTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastySnacksTabView.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				F46B522C27B41C8700E9E18F /* TastySnack.swift */,
 				F46B522E27B41E4600E9E18F /* TastySnackResponse.swift */,
 				F478F4FE27B98ED9000BDB4F /* User.swift */,
+				F4349FD727B9A02C00417813 /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				F46B521927B40F8A00E9E18F /* TastySnacksTabView.swift in Sources */,
 				F46B523427B4211B00E9E18F /* SnackListCell.swift in Sources */,
 				F478F4F427B98049000BDB4F /* TastyButton.swift in Sources */,
+				F4349FD827B9A02C00417813 /* Order.swift in Sources */,
 				F46B522D27B41C8700E9E18F /* TastySnack.swift in Sources */,
 				F46B524A27B5ACC900E9E18F /* Color+Extension.swift in Sources */,
 				F478F4FD27B98A3B000BDB4F /* String+Extension.swift in Sources */,
