@@ -28,7 +28,6 @@ struct TastySnacksTabView: View {
                     Text("Account")
                 }
         }
-        .accentColor(Color("brandSecondary"))
     }
 }
 
