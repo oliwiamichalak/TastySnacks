@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4349FD627B99A1A00417813 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4349FD527B99A1A00417813 /* EmptyState.swift */; };
 		F46B521727B40F8A00E9E18F /* TastySnacksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B521627B40F8A00E9E18F /* TastySnacksApp.swift */; };
 		F46B521927B40F8A00E9E18F /* TastySnacksTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B521827B40F8A00E9E18F /* TastySnacksTabView.swift */; };
 		F46B521B27B40F8D00E9E18F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F46B521A27B40F8D00E9E18F /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F4349FD527B99A1A00417813 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		F46B521327B40F8A00E9E18F /* TastySnacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TastySnacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46B521627B40F8A00E9E18F /* TastySnacksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastySnacksApp.swift; sourceTree = "<group>"; };
 		F46B521827B40F8A00E9E18F /* TastySnacksTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastySnacksTabView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F4349FD427B99A0900417813 /* EmptyStates */ = {
+			isa = PBXGroup;
+			children = (
+				F4349FD527B99A1A00417813 /* EmptyState.swift */,
+			);
+			path = EmptyStates;
+			sourceTree = "<group>";
+		};
 		F46B520A27B40F8A00E9E18F = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +152,7 @@
 		F46B523227B420CC00E9E18F /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				F4349FD427B99A0900417813 /* EmptyStates */,
 				F46B523327B4211B00E9E18F /* SnackListCell.swift */,
 				F46B524B27B5B3B200E9E18F /* RemoteImage.swift */,
 				F478F4F327B98049000BDB4F /* TastyButton.swift */,
@@ -286,6 +297,7 @@
 				F46B524527B5A6BE00E9E18F /* AlertDescription.swift in Sources */,
 				F478F4FB27B987E9000BDB4F /* AccountViewModel.swift in Sources */,
 				F46B523A27B45F9A00E9E18F /* ErrorType.swift in Sources */,
+				F4349FD627B99A1A00417813 /* EmptyState.swift in Sources */,
 				F46B521727B40F8A00E9E18F /* TastySnacksApp.swift in Sources */,
 				F478F4FF27B98ED9000BDB4F /* User.swift in Sources */,
 				F46B522627B4111E00E9E18F /* TastySnackListView.swift in Sources */,

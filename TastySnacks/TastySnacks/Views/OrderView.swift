@@ -12,21 +12,27 @@ struct OrderView: View {
 
     var body: some View {
         NavigationView {
-            VStack {
-                List {
-                    ForEach(MockData.snapleSnacks) { order in
-                        SnackListCell(tastySnack: order)
+            ZStack {
+                VStack {
+                    List {
+                        ForEach(MockData.snapleSnacks) { order in
+                            SnackListCell(tastySnack: order)
+                        }
+                        .onDelete(perform: deleteItems)
                     }
-                    .onDelete(perform: deleteItems)
-                }
-                .listStyle(GroupedListStyle())
+                    .listStyle(GroupedListStyle())
 
-                Button {
+                    Button {
 
-                } label: {
-                    TastyButton(title: "Order")
+                    } label: {
+                        TastyButton(title: "Order")
+                    }
+                    .padding(.bottom, 25)
                 }
-                .padding(.bottom, 25)
+
+                if orderItems.isEmpty {
+                    EmptyState(imageName: "emptyOrder", message: "You have no items in your order. Please, add some snack!")
+                }
             }
             .navigationTitle("Order")
         }
