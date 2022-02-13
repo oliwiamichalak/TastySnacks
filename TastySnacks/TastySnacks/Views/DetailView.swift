@@ -14,8 +14,7 @@ struct DetailView: View {
 
     var body: some View {
         VStack {
-            Image("testImage")
-                .resizable()
+            TastySnacksRemoteImage(urlString: tastySnack.imageURL)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 300, height: 225)
             VStack {

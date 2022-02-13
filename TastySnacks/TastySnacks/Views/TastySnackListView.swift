@@ -11,6 +11,7 @@ struct TastySnackListView: View {
 
     @StateObject var viewModel = TastySnacksListViewModel()
     @State private var isShowingDetail = false
+    @State private var selectdSnack: TastySnack?
 
     var body: some View {
         ZStack {
@@ -18,17 +19,20 @@ struct TastySnackListView: View {
                 List(viewModel.snacks) { snack in
                     SnackListCell(tastySnack: snack)
                         .onTapGesture {
+                            selectdSnack = snack
                             isShowingDetail = true
                         }
                 }
                 .navigationTitle("TastySnacks")
+                .disabled(isShowingDetail)
             }
             .onAppear {
                 viewModel.getSnacks()
             }
+            .blur(radius: isShowingDetail ? 20 : 0)
 
             if isShowingDetail {
-                DetailView(tastySnack: MockData.sampleSnack, isShowingDetail: $isShowingDetail)
+                DetailView(tastySnack: selectdSnack!, isShowingDetail: $isShowingDetail)
             }
 
             if viewModel.isLoading {
