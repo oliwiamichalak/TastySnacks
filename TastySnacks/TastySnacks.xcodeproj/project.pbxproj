@@ -27,6 +27,9 @@
 		F46B524A27B5ACC900E9E18F /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B524927B5ACC900E9E18F /* Color+Extension.swift */; };
 		F46B524C27B5B3B200E9E18F /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B524B27B5B3B200E9E18F /* RemoteImage.swift */; };
 		F46B524E27B69CFA00E9E18F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46B524D27B69CFA00E9E18F /* DetailView.swift */; };
+		F478F4F427B98049000BDB4F /* DetailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F478F4F327B98049000BDB4F /* DetailButton.swift */; };
+		F478F4F627B980BE000BDB4F /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F478F4F527B980BE000BDB4F /* DismissButton.swift */; };
+		F478F4F827B98170000BDB4F /* NutritionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F478F4F727B98170000BDB4F /* NutritionInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,9 @@
 		F46B524927B5ACC900E9E18F /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		F46B524B27B5B3B200E9E18F /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		F46B524D27B69CFA00E9E18F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		F478F4F327B98049000BDB4F /* DetailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailButton.swift; sourceTree = "<group>"; };
+		F478F4F527B980BE000BDB4F /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
+		F478F4F727B98170000BDB4F /* NutritionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,9 @@
 			children = (
 				F46B523327B4211B00E9E18F /* SnackListCell.swift */,
 				F46B524B27B5B3B200E9E18F /* RemoteImage.swift */,
+				F478F4F327B98049000BDB4F /* DetailButton.swift */,
+				F478F4F527B980BE000BDB4F /* DismissButton.swift */,
+				F478F4F727B98170000BDB4F /* NutritionInfo.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -249,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F478F4F827B98170000BDB4F /* NutritionInfo.swift in Sources */,
 				F46B524327B5A63500E9E18F /* AlertContext.swift in Sources */,
 				F46B524E27B69CFA00E9E18F /* DetailView.swift in Sources */,
 				F46B524C27B5B3B200E9E18F /* RemoteImage.swift in Sources */,
@@ -257,6 +267,7 @@
 				F46B522827B4113100E9E18F /* AccountView.swift in Sources */,
 				F46B521927B40F8A00E9E18F /* TastySnacksTabView.swift in Sources */,
 				F46B523427B4211B00E9E18F /* SnackListCell.swift in Sources */,
+				F478F4F427B98049000BDB4F /* DetailButton.swift in Sources */,
 				F46B522D27B41C8700E9E18F /* TastySnack.swift in Sources */,
 				F46B524A27B5ACC900E9E18F /* Color+Extension.swift in Sources */,
 				F46B523D27B4668300E9E18F /* TastySnacksListViewModel.swift in Sources */,
@@ -266,6 +277,7 @@
 				F46B523A27B45F9A00E9E18F /* ErrorType.swift in Sources */,
 				F46B521727B40F8A00E9E18F /* TastySnacksApp.swift in Sources */,
 				F46B522627B4111E00E9E18F /* TastySnackListView.swift in Sources */,
+				F478F4F627B980BE000BDB4F /* DismissButton.swift in Sources */,
 				F46B522A27B4113A00E9E18F /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

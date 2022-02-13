@@ -27,35 +27,9 @@ struct DetailView: View {
                     .font(.body)
                     .padding()
                 HStack(spacing: 40) {
-                    VStack(spacing: 5) {
-                        Text("Calories")
-                            .bold()
-                            .font(.caption)
-                        Text("\(tastySnack.calories)")
-                            .foregroundColor(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
-                    
-                    VStack(spacing: 5) {
-                        Text("Carbs")
-                            .bold()
-                            .font(.caption)
-                        Text("\(tastySnack.carbs)")
-                            .foregroundColor(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
-                    
-                    VStack(spacing: 5) {
-                        Text("Protein")
-                            .bold()
-                            .font(.caption)
-                        Text("\(tastySnack.protein)")
-                            .foregroundColor(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
+                    NutritionInfo(title: "Calories", value: tastySnack.calories)
+                    NutritionInfo(title: "Carbs", value: tastySnack.carbs)
+                    NutritionInfo(title: "Protein", value: tastySnack.protein)
                 }
             }
 
@@ -64,13 +38,7 @@ struct DetailView: View {
             Button {
                 print("test")
             } label: {
-                Text("$\(tastySnack.price, specifier: "%.2f") - Add to Order")
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                    .frame(width: 260, height: 50)
-                    .foregroundColor(.white)
-                    .background(Color.brandPrimary)
-                    .cornerRadius(10)
+                DetailButton(title: "$\(tastySnack.price, specifier: "%.2f") - Add to Order")
             }
             .padding(.bottom, 30)
         }
@@ -81,16 +49,7 @@ struct DetailView: View {
         .overlay(Button {
             isShowingDetail = false
         } label: {
-            ZStack {
-                Circle()
-                    .frame(width: 30, height: 30)
-                    .foregroundColor(.white)
-                    .opacity(0.6)
-                Image(systemName: "xmark")
-                    .imageScale(.small)
-                    .frame(width: 44, height: 44)
-                foregroundColor(.black)
-            }
+            DismissButton()
         }, alignment: .topTrailing)
     }
 }
