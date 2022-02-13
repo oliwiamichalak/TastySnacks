@@ -1,5 +1,5 @@
 //
-//  DetailButton.swift
+//  TastyButton.swift
 //  TastySnacks
 //
 //  Created by Oliwia Michalak on 13/02/2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DetailButton: View {
+struct TastyButton: View {
     let title: LocalizedStringKey
 
     var body: some View {
@@ -23,6 +23,6 @@ struct DetailButton: View {
 
 struct DetailButton_Previews: PreviewProvider {
     static var previews: some View {
-        DetailButton(title: "test")
+        TastyButton(title: "test")
     }
 }
