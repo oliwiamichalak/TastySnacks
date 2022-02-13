@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct OrderView: View {
+    @State private var orderItems = MockData.snapleSnacks
+
     var body: some View {
         NavigationView {
             VStack {
                 List {
                     ForEach(MockData.snapleSnacks) { order in
                         SnackListCell(tastySnack: order)
+                    }
+                    .onDelete { indexSet in
+                        orderItems.remove(atOffsets: indexSet)
                     }
                 }
                 .listStyle(GroupedListStyle())
