@@ -38,7 +38,7 @@ struct DetailView: View {
             Button {
                 print("test")
             } label: {
-                DetailButton(title: "$\(tastySnack.price, specifier: "%.2f") - Add to Order")
+                TastyButton(title: "$\(tastySnack.price, specifier: "%.2f") - Add to Order")
             }
             .padding(.bottom, 30)
         }

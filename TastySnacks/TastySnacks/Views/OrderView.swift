@@ -10,8 +10,22 @@ import SwiftUI
 struct OrderView: View {
     var body: some View {
         NavigationView {
-            Text("Order")
-                .navigationTitle("Order")
+            VStack {
+                List {
+                    ForEach(MockData.snapleSnacks) { order in
+                        SnackListCell(tastySnack: order)
+                    }
+                }
+                .listStyle(GroupedListStyle())
+
+                Button {
+
+                } label: {
+                    TastyButton(title: "Order")
+                }
+                .padding(.bottom, 25)
+            }
+            .navigationTitle("Order")
         }
     }
 }
